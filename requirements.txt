@@ -1,0 +1,12 @@
+fastapi
+python-dotenv
+langgraph
+langchain-openai
+langchain-tavily
+langchain-community
+uvicorn
+sqlalchemy
+psycopg2-binary
+supabase
+python-jose
+pydantic[email]
