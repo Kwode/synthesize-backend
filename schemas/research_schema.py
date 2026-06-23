@@ -15,8 +15,6 @@ class ResearchResponse(BaseModel):
     }
 
 class HistoryResponse(BaseModel):
-    id: UUID
-    user_id: UUID
     question: str
     search_query: str
     attempts: int
