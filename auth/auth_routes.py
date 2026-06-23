@@ -34,7 +34,7 @@ def sign_up(user: Signup, db: Session = Depends(get_db)):
         db.commit()
         db.refresh(new_user)
 
-        return {"user": new_user}
+        return { "status": "success", "message": "User registered successfully" }
     
     except Exception as e:
         db.rollback()

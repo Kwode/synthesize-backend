@@ -9,7 +9,7 @@ app = FastAPI(
 )
 
 origins = [
-
+    "https://synthesize-frontend-gamma.vercel.app"
 ]
 
 app.add_middleware(
@@ -26,7 +26,7 @@ app.add_middleware(
 
 Base.metadata.create_all(bind=engine)
 
-app.include_router(auth_routes.router, prefix="/api")
-app.include_router(research.router, prefix="/api")
-app.include_router(user_routes.router, prefix="/api")
-app.include_router(analytics.router, prefix="/api")
+app.include_router(auth_routes.router)
+app.include_router(research.router)
+app.include_router(user_routes.router)
+app.include_router(analytics.router)
